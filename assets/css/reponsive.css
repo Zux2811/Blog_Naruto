@@ -1,0 +1,97 @@
+/* Ipad tablet */
+@media (max-width: 1024px){
+    #nav li a {
+        padding: 0px 13px;
+    }
+
+    .power-review{
+        padding: 14px 29px;
+    }
+
+    .contact-info {
+        font-size: 19px;
+        line-height: 1.9;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .contact-form .form-submit-btn{
+        padding: 14px 30px;
+    }
+
+    #footer .footer-icon a {
+        margin: 0px 17px;
+        font-size: 39px;
+    }
+
+    #footer .footer-my {
+        font-size: 19px;
+    }
+}
+
+/* mobile  */
+@media (max-width: 739px){
+    /* nav */
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    .s-mt-8{
+        margin-top: 8px;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav{
+        position: initial;
+    }
+
+    #nav .subnav a{
+        padding: 5px 41px;
+    }
+
+    #nav > li:first-child {
+        display: inline-block; /*  thuoc tinh Pseudo, lay the con dau tien */
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #header .menu-btn {
+        display: block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    /* slider */
+
+    /* content */
+    #content .member-item {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 70%;
+    }
+
+    .power-img{
+        height: auto;
+    }
+
+    .contact-form{
+        margin-top: 16px;
+    }
+}

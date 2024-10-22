@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* the chung */
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important; 
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/*  */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth; /* hanh dong cuon. behavior:hanh vi khi cuon */
+    
+}
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+
+}
+
+#nav .subnav a{
+    color: #fff;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+
+#nav > li{    
+    display: inline-block;
+    
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none; /* bo dau gach chan*/
+    line-height: 50px; /* can giua chu*/
+    padding: 0px 25px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: rgb(7, 167, 167);
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(0, 0, 0) ;
+    box-shadow: 0 0 10px rbga(255, 255, 255, 0.3);
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 25px;
+}
+
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer; 
+}
+
+#header .menu-btn:hover{
+    background-color: rgb(7, 167, 167);
+    }
+    
+#header .menu-btn:hover .menu-icon{
+    color: #000;
+
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+
+/* slider */
+
+#slider {
+    position: relative;
+
+    padding-top: 50%;
+    background: url('../img/slider/3.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    width: 25%;
+    position: absolute;
+    bottom: 47px;
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+}
+
+#slider .text-heading{
+    font-weight: 700;
+    margin: 28px 0;
+}
+
+#slider .text-description{
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+/* Content */
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-weight: 525;
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.6;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* content img */
+
+#content .member-list{
+    margin-top: 32px;
+    overflow: hidden;/* bên dưới có float thì sd thuôc tính này để thẻ cha ôm đc thẻ con */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content .member-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    border-radius: 7px;
+    margin: 15px;
+    width: 125px;
+    transition: all 0.2s ease-in-out;
+}
+
+#content .member-img:hover{
+    transform: scale(1.2);
+}
+
+/* series section */
+.series-section{
+    background-color: #000;
+}
+
+.series-section .section-heading,
+.series-section .section-sub-heading{
+    color: #fff;
+}
+
+.sfilm{
+    background-color: #fff;
+    margin-top: 45px;
+}
+
+.sfilm li{
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+
+.sfilm .quantity{
+    float: right;
+    width: 35px;
+    height: 25px;
+    background-color: rgb(7, 167, 167);
+    color: #000;
+    border-radius: 25%;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -3px;
+}
+
+.content-section .section-power{
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+/* powwer review */
+
+.power-list{
+    margin: 29px -8px 45px 0;
+    overflow: hidden;
+    padding-bottom: 45px;
+}
+
+.power-item{
+    float: left;
+    width: 33.3333%;
+    padding: 0px 8px;
+}
+
+.hover-img{
+    overflow: hidden;
+}
+
+#series .power-img{
+    width: 100%;
+    height: 187px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+#series .power-img:hover{
+    transform: scale(1.1); /* Zoom lên khi hover */
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.power-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.power-heading{
+    
+}
+
+.power-name{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.power-decs{
+    margin-top: 15px;
+    
+}
+
+.power-review{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.power-review:hover{
+    color: #000;
+    background-color: rgb(7, 167, 167);
+    cursor: pointer;
+}
+
+/* review page */
+.reviewpage{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.reviewpage.open{
+    display: flex;
+}
+
+.review-page-container{
+    background-color: rgb(7, 167, 167);
+    width: 900px;
+    min-height: 200px;
+    margin-top: 50px;
+    border-radius: 8px;
+    position: relative;
+    animation: modalFadein ease .5s;
+}
+
+.review-page-close{
+    position: absolute;
+    color: black;
+    background-color: aqua;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    opacity: 0.6;
+    border-top-right-radius: 8px;
+}
+
+.review-page-close:hover{
+    opacity: 1;
+}
+
+.review-page-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review-page-img{
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.page-container-body{
+    padding: 20px;
+    color: #000000;
+    position: relative;
+}
+
+.about-page{
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+.about-page-text{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* contact from  */
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .row{
+    overflow: hidden;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline-color: rgb(7, 167, 167);
+}
+
+.contact-form .form-submit-btn{
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 10px 16px;
+    margin-bottom: 50px;
+}
+
+.contact-form .form-submit-btn:hover{
+    background-color: rgb(7, 167, 167);
+    color: #000;
+    cursor: pointer;
+}
+
+/* Map section  */
+.map-section img{
+    width: 100%;
+}
+/* footer section */
+#footer{
+    margin: 64px 16px;
+    text-align: center;
+}
+
+#footer .footer-icon a{
+    margin: 0 5px;
+    color: rgb(7, 167, 167);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#footer .footer-icon a:hover{
+    opacity: 0.6;
+}
+
+#footer .footer-my{
+    margin: 20px 0 50px;
+}
+
+#footer .footer-my a{
+    color: rgb(7, 167, 167);
+    text-decoration: none;
+}
+
+#footer .footer-my a:hover{
+    opacity: 0.6;
+}
+
+@keyframes modalFadein{
+    from{
+        transform: translateY(-150px);
+        opacity: 0.7;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
